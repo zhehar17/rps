@@ -4,4 +4,10 @@ function getComputerChoice() {
     return choices[randomIndex];
 }
 
-console.log(getComputerChoice());
+function getHumanChoice() {
+    let choice = prompt("Enter your choice (rock, paper, or scissors):").toLowerCase();
+    // for now, ignore error handling
+    return choice;
+}
+
+console.log(getHumanChoice());
